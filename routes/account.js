@@ -10,6 +10,10 @@ accuontRouter.use((req, res, next)=> {
 })
 
 
+accuontRouter.get("/", (req,res) => {
+    res.send("Holaa");
+})
+
 //obtner los detalles de una cuenta
 accuontRouter.get('/:guid', (req, res) => {
     const { guid } = req.params;
